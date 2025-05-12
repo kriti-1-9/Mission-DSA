@@ -18,17 +18,3 @@ long long countDivisibleSubarrays(const vector<int>& nums, int k) {
 
     return count;
 }
-
-int main() {
-    int T;
-    cin >> T;
-    while (T--) {
-        int n, k;
-        cin >> n >> k;
-        vector<int> nums(n);
-        for (int i = 0; i < n; ++i)
-            cin >> nums[i];
-        cout << countDivisibleSubarrays(nums, k) << "\n";
-    }
-    return 0;
-}
